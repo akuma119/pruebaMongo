@@ -1,0 +1,18 @@
+html
+  head
+    style
+      include estilo.css
+  body
+    h1 Crear nuevo hashtag
+    p tal vez quieras 
+      a(href="/buscar") buscar un hashtag
+    form(method="post" action="/agregar")
+      .contenedor
+        p
+          input(type="text" name="nombre" placeholder="nombre")
+        p
+          input(type="text" name="significado" placeholder="significado")
+        p
+          input(type="submit" value="Agregar" class="boton")
+    #nom_res #{nom_res}
+    #sig_res #{sig_res}
